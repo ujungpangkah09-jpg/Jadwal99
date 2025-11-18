@@ -1,0 +1,14 @@
+{
+  "name": "jadwal-whatsapp-bot",
+  "version": "1.0.0",
+  "description": "Bot WhatsApp pengirim jadwal sekolah otomatis",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.0.0",
+    "node-cron": "^3.0.0",
+    "pino": "^9.0.0"
+  }
+}
