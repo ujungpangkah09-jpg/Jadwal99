@@ -1,0 +1,65 @@
+{
+  "senin": [
+    { "jam_ke": 1, "waktu": "07.30 - 08.10", "guru": "Zaidatul Rokhmah, S.Pd.", "mapel": "Bahasa Indonesia", "ruang": "A3" },
+    { "jam_ke": 2, "waktu": "08.10 - 08.50", "guru": "Zaidatul Rokhmah, S.Pd.", "mapel": "Bahasa Indonesia", "ruang": "A3" },
+    { "jam_ke": 3, "waktu": "08.50 - 09.30", "guru": "Zaidatul Rokhmah, S.Pd.", "mapel": "Bahasa Indonesia", "ruang": "A3" },
+    { "jam_ke": 4, "waktu": "09.30 - 10.10", "guru": "Zaidatul Rokhmah, S.Pd.", "mapel": "Bahasa Indonesia", "ruang": "A3" },
+    { "jam_ke": 5, "waktu": "10.10 - 10.50", "guru": "Pangesti Budi Purbasari, S.Pd.", "mapel": "Seni Budaya", "ruang": "A3" },
+    { "jam_ke": 6, "waktu": "10.50 - 11.30", "guru": "Pangesti Budi Purbasari, S.Pd.", "mapel": "Seni Budaya", "ruang": "A3" },
+    { "jam_ke": 7, "waktu": "12.30 - 13.10", "guru": "Kiswanto, S.Pd, M.M.", "mapel": "Bahasa Inggris", "ruang": "B1" },
+    { "jam_ke": 8, "waktu": "13.10 - 13.49", "guru": "Kiswanto, S.Pd, M.M.", "mapel": "Bahasa Inggris", "ruang": "B1" },
+    { "jam_ke": 9, "waktu": "13.49 - 14.30", "guru": "Abdul Arif Zen, S.Kom., Gr", "mapel": "Koding dan Kecerdasan Artifisial", "ruang": "A5" },
+    { "jam_ke": 10, "waktu": "14.30 - 15.10", "guru": "Abdul Arif Zen, S.Kom., Gr", "mapel": "Koding dan Kecerdasan Artifisial", "ruang": "A5" }
+  ],
+
+  "selasa": [
+    { "jam_ke": 1, "waktu": "07.20 - 08.00", "guru": "Budi Subiyanto, S.Kom.", "mapel": "Dasar-dasar Program Keahlian", "ruang": "I4" },
+    { "jam_ke": 2, "waktu": "08.00 - 08.40", "guru": "Budi Subiyanto, S.Kom.", "mapel": "Dasar-dasar Program Keahlian", "ruang": "I4" },
+    { "jam_ke": 3, "waktu": "08.40 - 09.20", "guru": "Budi Subiyanto, S.Kom.", "mapel": "Dasar-dasar Program Keahlian", "ruang": "I4" },
+    { "jam_ke": 4, "waktu": "09.20 - 10.00", "guru": "Budi Subiyanto, S.Kom.", "mapel": "Dasar-dasar Program Keahlian", "ruang": "I4" },
+    { "jam_ke": 5, "waktu": "10.00 - 10.40", "guru": "Budi Subiyanto, S.Kom.", "mapel": "Dasar-dasar Program Keahlian", "ruang": "I4" },
+    { "jam_ke": 6, "waktu": "11.20 - 12.00", "guru": "Lailatul Anifah, S.Pd", "mapel": "Bahasa Daerah", "ruang": "B1" },
+    { "jam_ke": 7, "waktu": "12.00 - 12.40", "guru": "Kiswanto, S.Pd, M.M.", "mapel": "Bahasa Inggris", "ruang": "B1" },
+    { "jam_ke": 8, "waktu": "12.40 - 13.20", "guru": "Kiswanto, S.Pd, M.M.", "mapel": "Bahasa Inggris", "ruang": "B1" },
+    { "jam_ke": 9, "waktu": "13.20 - 14.00", "guru": "Yayuk Sri Rahayu, S.Pd., M.Pd.", "mapel": "Projek Ilmu Pengetahuan Alam dan Sosial", "ruang": "B1" },
+    { "jam_ke": 10, "waktu": "14.00 - 14.50", "guru": "Yayuk Sri Rahayu, S.Pd., M.Pd.", "mapel": "Projek Ilmu Pengetahuan Alam dan Sosial", "ruang": "B1" }
+  ],
+
+  "rabu": [
+    { "jam_ke": 1, "waktu": "07.20 - 08.00", "guru": "Yayuk Sri Rahayu, S.Pd., M.Pd.", "mapel": "Projek Ilmu Pengetahuan Alam dan Sosial", "ruang": "A3" },
+    { "jam_ke": 2, "waktu": "08.00 - 08.40", "guru": "Yayuk Sri Rahayu, S.Pd., M.Pd.", "mapel": "Projek Ilmu Pengetahuan Alam dan Sosial", "ruang": "A3" },
+    { "jam_ke": 3, "waktu": "08.40 - 09.20", "guru": "Yayuk Sri Rahayu, S.Pd., M.Pd.", "mapel": "Projek Ilmu Pengetahuan Alam dan Sosial", "ruang": "A3" },
+    { "jam_ke": 4, "waktu": "09.20 - 10.00", "guru": "Abdul Arif Zen, S.Kom., Gr", "mapel": "Dasar-dasar Program Keahlian", "ruang": "I3" },
+    { "jam_ke": 5, "waktu": "10.00 - 10.40", "guru": "Abdul Arif Zen, S.Kom., Gr", "mapel": "Dasar-dasar Program Keahlian", "ruang": "I3" },
+    { "jam_ke": 6, "waktu": "10.40 - 11.20", "guru": "Muh. Amri Mukhtarfinn, S.Pd., Gr", "mapel": "Informatika", "ruang": "C7" },
+    { "jam_ke": 7, "waktu": "12.30 - 13.10", "guru": "Muh. Amri Mukhtarfinn, S.Pd., Gr", "mapel": "Informatika", "ruang": "C7" },
+    { "jam_ke": 8, "waktu": "13.10 - 13.49", "guru": "Muh. Amri Mukhtarfinn, S.Pd., Gr", "mapel": "Informatika", "ruang": "C7" },
+    { "jam_ke": 9, "waktu": "13.49 - 14.30", "guru": "Muh. Amri Mukhtarfinn, S.Pd., Gr", "mapel": "Informatika", "ruang": "C7" },
+    { "jam_ke": 10, "waktu": "14.30 - 15.10", "guru": "Muh. Amri Mukhtarfinn, S.Pd., Gr", "mapel": "Informatika", "ruang": "C7" }
+  ],
+
+  "kamis": [
+    { "jam_ke": 1, "waktu": "07.20 - 08.00", "guru": "Rahmat Syah, S.Or.", "mapel": "PJOK", "ruang": "LAP" },
+    { "jam_ke": 2, "waktu": "08.00 - 08.40", "guru": "Rahmat Syah, S.Or.", "mapel": "PJOK", "ruang": "LAP" },
+    { "jam_ke": 3, "waktu": "08.40 - 09.20", "guru": "Rahmat Syah, S.Or.", "mapel": "PJOK", "ruang": "LAP" },
+    { "jam_ke": 4, "waktu": "09.20 - 10.00", "guru": "Raden Ayu Eva Amellia Darmawan, S.Pd.", "mapel": "Bimbingan Konseling", "ruang": "A3" },
+    { "jam_ke": 5, "waktu": "10.00 - 10.40", "guru": "Novi Rozilawati Nur Fazin, S.Pd", "mapel": "Sejarah", "ruang": "A3" },
+    { "jam_ke": 6, "waktu": "11.20 - 12.00", "guru": "Muhammad Syafuil Anam Al Ghozaly, S.Pd.", "mapel": "Pendidikan Pancasila", "ruang": "A3" },
+    { "jam_ke": 7, "waktu": "12.00 - 12.40", "guru": "Imawati, S.Pd., Gr", "mapel": "Matematika", "ruang": "A3" },
+    { "jam_ke": 8, "waktu": "12.40 - 13.20", "guru": "Imawati, S.Pd., Gr", "mapel": "Matematika", "ruang": "A3" },
+    { "jam_ke": 9, "waktu": "13.20 - 14.00", "guru": "Imawati, S.Pd., Gr", "mapel": "Matematika", "ruang": "A3" },
+    { "jam_ke": 10, "waktu": "14.00 - 14.50", "guru": "Imawati, S.Pd., Gr", "mapel": "Matematika", "ruang": "A3" }
+  ],
+
+  "jumat": [
+    { "jam_ke": 1, "waktu": "07.00 - 07.40", "guru": "Mochamad Faisol Karim, S.Pd.", "mapel": "Dasar-dasar Program Keahlian", "ruang": "I3" },
+    { "jam_ke": 2, "waktu": "07.40 - 08.20", "guru": "Mochamad Faisol Karim, S.Pd.", "mapel": "Dasar-dasar Program Keahlian", "ruang": "I3" },
+    { "jam_ke": 3, "waktu": "08.20 - 09.00", "guru": "Mochamad Faisol Karim, S.Pd.", "mapel": "Dasar-dasar Program Keahlian", "ruang": "I3" },
+    { "jam_ke": 4, "waktu": "09.00 - 09.35", "guru": "Novi Rozilawati Nur Fazin, S.Pd", "mapel": "Sejarah", "ruang": "A3" },
+    { "jam_ke": 5, "waktu": "09.35 - 10.15", "guru": "Muhammad Syafuil Anam Al Ghozaly, S.Pd.", "mapel": "Pendidikan Pancasila", "ruang": "A3" },
+    { "jam_ke": 6, "waktu": "13.00 - 13.40", "guru": "M. Mahfud Alfandi, S.Ag., M.Pd.", "mapel": "Pendidikan Agama & Budi Pekerti", "ruang": "A3" },
+    { "jam_ke": 7, "waktu": "13.40 - 14.20", "guru": "M. Mahfud Alfandi, S.Ag., M.Pd.", "mapel": "Pendidikan Agama & Budi Pekerti", "ruang": "A3" },
+    { "jam_ke": 8, "waktu": "14.20 - 15.00", "guru": "M. Mahfud Alfandi, S.Ag., M.Pd.", "mapel": "Pendidikan Agama & Budi Pekerti", "ruang": "A3" },
+    { "jam_ke": 9, "waktu": "15.00 - 15.40", "guru": "Yayuk Sri Rahayu, S.Pd., M.Pd.", "mapel": "Projek Ilmu Pengetahuan Alam dan Sosial", "ruang": "A3" }
+  ]
+    }
