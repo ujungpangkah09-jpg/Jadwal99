@@ -4,7 +4,7 @@ const cron = require("node-cron");
 const pino = require("pino");
 const fs = require("fs");
 
-// --- Load data jadwal ---
+// Load jadwal
 const jadwal = JSON.parse(fs.readFileSync("./jadwal.json", "utf8"));
 
 async function startBot() {
@@ -13,49 +13,57 @@ async function startBot() {
   const sock = makeWASocket({
     logger: pino({ level: "silent" }),
     printQRInTerminal: true,
-    auth: state,
+    auth: state
   });
 
   sock.ev.on("creds.update", saveCreds);
 
-  // Format jadwal menjadi teks siap kirim
-  function formatJadwal(hari) {
-    const data = jadwal[hari.toLowerCase()];
-    if (!data) return "Tidak ada jadwal untuk hari ini.";
+  // === Fungsi Format Jadwal ===
+  function formatJadwal(hariKey) {
+    const items = jadwal[hariKey];
+    if (!items) return "🎯 Tidak ada jadwal untuk hari ini.";
 
-    let teks = `📅 *Jadwal Pelajaran ${hari.toUpperCase()}*\n\n`;
-
-    data.forEach(item => {
-      teks += `🕒 *Jam ke ${item.jam_ke}* (${item.waktu})\n`;
+    let teks = `📅 *JADWAL PELAJARAN ${hariKey.toUpperCase()}*\n\n`;
+    items.forEach(item => {
+      teks += `🕒 Jam ke ${item.jam_ke} (${item.waktu})\n`;
       teks += `📘 ${item.mapel}\n`;
       teks += `👨‍🏫 ${item.guru}\n`;
       teks += `🏫 Ruang: ${item.ruang}\n\n`;
     });
-
     return teks;
   }
 
-  // --- Daftar nomor penerima ---
-  const nomorTujuan = [
-    "628xxxxxxx"
-  ];
+  // === Ambil event chat ===
+  sock.ev.on("messages.upsert", async (m) => {
+    const msg = m.messages[0];
+    if (!msg.message) return;
 
-  // --- Kirim jadwal setiap hari jam 05:30 ---
-  cron.schedule("30 5 * * 1-5", async () => {  // Senin–Jumat
-    const now = new Date();
-    const hariIndex = now.getDay(); // 1 = Senin ... 5 = Jumat
+    const from = msg.key.remoteJid;
+    const text = msg.message.conversation || msg.message.extendedTextMessage?.text;
 
-    const namaHari = ["", "senin", "selasa", "rabu", "kamis", "jumat"][hariIndex];
-    const pesan = formatJadwal(namaHari);
-
-    for (const nomor of nomorTujuan) {
-      await sock.sendMessage(nomor + "@s.whatsapp.net", { text: pesan });
+    // Jika user kirim !id → bot akan balas ID grup
+    if (text === "!id") {
+      await sock.sendMessage(from, { text: `ID Grup ini:\n\n*${from}*` });
     }
-
-    console.log(`Jadwal ${namaHari} dikirim.`);
   });
 
-  console.log("BOT AKTIF...");
+  // === Masukkan ID Grup di sini ===
+  const groupID = "xxxxxxxxxxxx-xxxx@g.us";  // ← ganti nanti setelah dapat dari !id
+
+  // === Cron Kirim Otomatis (05:30 Senin–Jumat) ===
+  cron.schedule("30 5 * * 1-5", async () => {
+    const hariIndex = new Date().getDay();
+    const namaHari = ["", "senin", "selasa", "rabu", "kamis", "jumat"];
+    const hariKey = namaHari[hariIndex] || "senin";
+
+    const pesan = formatJadwal(hariKey);
+
+    await sock.sendMessage(groupID, { text: pesan });
+
+    console.log(`Jadwal ${hariKey} dikirim ke grup.`);
+  });
+
+  console.log("Bot siap dipakai... Scan QR di terminal.");
 }
 
 startBot();
